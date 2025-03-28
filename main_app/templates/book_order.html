@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Order</title>
+</head>
+<body>
+<h1>Book an Order</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label>Weight (KG):</label>
+    <input type="number" name="weight" step="0.01"><br>
+
+    <label>Customer ID:</label>
+    <input type="number" name="customer_id"><br>
+
+    <label>ShipRoute ID:</label>
+    <input type="number" name="shiproute_id"><br>
+
+    <label>Description:</label>
+    <input type="text" name="description"><br>
+
+    <button type="submit">Book</button>
+</form>
+</body>
+</html>

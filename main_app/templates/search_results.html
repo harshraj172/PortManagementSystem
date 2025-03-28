@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ship Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table border="1">
+        <tr>
+            <th>Ship ID</th>
+            <th>Name</th>
+            <th>Cost Per KG</th>
+            <th>Duration</th>
+            <th>Origin</th>
+            <th>Destination</th>
+        </tr>
+        {% for route in routes %}
+        <tr>
+            <td>{{ route.ShipID }}</td>
+            <td>{{ route.Name }}</td>
+            <td>{{ route.CostPerKG }}</td>
+            <td>{{ route.Duration }}</td>
+            <td>{{ route.Origin }}</td>
+            <td>{{ route.Destination }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

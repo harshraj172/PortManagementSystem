@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Markup</title>
+</head>
+<body>
+    <h1>Update ShipRoute Price Markup</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>ShipRoute ID:</label>
+        <input type="number" name="shiproute_id"><br><br>
+
+        <label>Markup Percentage (%):</label>
+        <input type="text" name="markup_percentage"><br><br>
+
+        <button type="submit">Update Markup</button>
+    </form>
+</body>
+</html>
